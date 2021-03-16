@@ -8,7 +8,7 @@ services:
       GAMEMODE: creative
       DIFFICULTY: easy
     ports:
-      - 18132:18132/udp
+      - 18888:18888/udp
     volumes:
       - bds:/data
     stdin_open: true
