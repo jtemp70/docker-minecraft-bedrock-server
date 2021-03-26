@@ -2,6 +2,7 @@ version: '3.4'
 
 services:
   bds:
+<<<<<<< Updated upstream
     image: enzo
     environment:
       EULA: "TRUE"
@@ -9,6 +10,15 @@ services:
       DIFFICULTY: easy
     ports:
       - 18888:18888/udp
+=======
+    image: jtemp70/minecraft-bedrock-server
+    environment:
+      EULA: "TRUE"
+      GAMEMODE: creative
+      DIFFICULTY: peaceful
+    ports:
+      - 23132:23132/udp
+>>>>>>> Stashed changes
     volumes:
       - bds:/data
     stdin_open: true
